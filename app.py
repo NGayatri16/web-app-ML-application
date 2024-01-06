@@ -24,5 +24,5 @@ r=st.number_input('Enter Rainfall:')
 
 if st.button('Recommend Crop'):
     data=[[n,p,k,t,ph,r]]
-    result=classifier.predict(data)[o]
+    result=classifier.predict(data)[0]
     st.success(result)
