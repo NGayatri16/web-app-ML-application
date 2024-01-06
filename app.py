@@ -10,7 +10,7 @@ Y=dataset.iloc[:,-1].values
 
 X_train,X_test,Y_tain,Y_test=train_test_split(X,Y,test_size=0.2)
 classifier=LogisticRegression()
-classifier.fit(X_train,y_train)
+classifier.fit(X_train,Y_train)
 
 st.title('Crop Recommundation')
 n=st.number_input('Enter Nitrogen')
